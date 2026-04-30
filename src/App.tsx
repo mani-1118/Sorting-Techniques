@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-// Build Version: 1.0.2 - Deployment Sync
+// Build Version: 1.0.3 - Deployment Sync
 import { motion, AnimatePresence } from 'motion/react';
 import { 
   Play, 
