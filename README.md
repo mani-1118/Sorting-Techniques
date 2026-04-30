@@ -13,4 +13,5 @@ A professional-grade sorting algorithm visualizer with step-by-step history, spe
 - **Code Execution**: See the algorithm's pseudocode run alongside the animation.
 - **Speed Control**: Adjust the visualization speed to suit your learning pace.
 
-
+## Live Link
+https://mani-1118.github.io/Sorting-Techniques/
