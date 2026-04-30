@@ -2,6 +2,18 @@
 
 A professional-grade sorting algorithm visualizer with step-by-step history, speed control, and real-time complexity analysis.
 
+## Deployment Instruction (CRITICAL)
+
+To update your GitHub Pages site with these fixes:
+1. Click the **GitHub** icon in the left sidebar of this editor.
+2. You should see **3 files modified** (App.tsx, vite.config.ts, and README.md).
+3. If you don't see them, click the **refresh icon** in the GitHub sidebar.
+4. Enter a commit message like "fix: GitHub Pages 404 and base path".
+5. Click **Commit and Push**.
+6. Go to your GitHub repository Actions tab to watch the build.
+
+Your live link should be: `https://mani-1118.github.io/Sorting-Techniques/`
+
 ## Features
 
 - **Multiple Algorithms**: Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort, and Binary Search.
