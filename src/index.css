@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  /* Dark Theme (Default) */
+  --color-bg-app: #0f172a;
+  --color-panel: #1e293b;
+  --color-panel-border: rgba(255, 255, 255, 0.05);
+  --color-accent-primary: #3b82f6;
+  --color-accent-success: #10b981;
+  --color-accent-error: #f43f5e;
+  --color-text-main: #f8fafc;
+  --color-text-dim: #94a3b8;
+  --color-input-bg: rgba(0, 0, 0, 0.2);
+}
+
+@layer base {
+  body {
+    @apply bg-bg-app text-text-main font-sans antialiased transition-colors duration-500;
+  }
+  
+  /* Light Theme Overrides */
+  .light-theme {
+    --color-bg-app: #f1f5f9;
+    --color-panel: #ffffff;
+    --color-panel-border: rgba(0, 0, 0, 0.05);
+    --color-accent-primary: #2563eb;
+    --color-accent-success: #059669;
+    --color-accent-error: #e11d48;
+    --color-text-main: #0f172a;
+    --color-text-dim: #64748b;
+    --color-input-bg: #f8fafc;
+    @apply text-text-main;
+  }
+}
+
+@layer components {
+  .hardware-panel {
+    @apply bg-panel border border-panel-border rounded-2xl shadow-xl transition-all duration-500;
+  }
+  
+  .hardware-button-primary {
+    @apply px-5 py-2.5 rounded-xl font-semibold transition-all duration-200 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed bg-accent-primary hover:brightness-110 text-white shadow-lg shadow-accent-primary/20;
+  }
+  
+  .hardware-button-secondary {
+    @apply px-4 py-2 rounded-xl font-medium transition-all duration-200 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 text-text-main border border-panel-border;
+  }
+  
+  .hardware-input {
+    @apply bg-input-bg border border-panel-border rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-primary/20 focus:border-accent-primary transition-all text-text-main font-medium;
+  }
+
+  .stat-card {
+    @apply bg-black/5 dark:bg-black/20 p-4 rounded-xl border border-panel-border transition-colors duration-500;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-text-dim/20 rounded-full hover:bg-text-dim/40 transition-colors;
+}

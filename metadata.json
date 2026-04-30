@@ -1,0 +1,5 @@
+{
+  "name": "SortVision Pro",
+  "description": "A professional-grade sorting algorithm visualizer with step-by-step history, speed control, and real-time complexity analysis.",
+  "requestFramePermissions": []
+}
