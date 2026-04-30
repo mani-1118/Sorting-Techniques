@@ -6,7 +6,7 @@ import {defineConfig, loadEnv} from 'vite';
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
-    base: '/Sorting-Techniques/',
+    base: '/Sorting-Techniques/', // Configured for GitHub Pages at /Sorting-Techniques/
     plugins: [react(), tailwindcss()],
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
